@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProdArt- Productos</title>
+    <title>Tech4You-Movi</title>
     <!-- iconos-->
     <link rel="apple-touch-icon" href="assets/img/">
     <!-- css-->
@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="assets/css/templatemo.css">
      <link rel="stylesheet" href="assets/css/custom.css">
      <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+     <link rel="stylesheet" href="assets/css/efecto_zoom.css">
 </head>
 <body>
         <!-- inicio encabezado-->
@@ -19,7 +20,7 @@
                 <div class="w-100 d-flex justify-content-between">
                     <div>
                         <i class="fa fa-envelope mx-2"></i>
-                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@prodart.com">info@Tech4You.com</a>
                         <i class="fa fa-phone mx-2"></i>
                         <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 057-320-202-02-02">057-320-202-02-02</a>
                     </div>
@@ -40,7 +41,7 @@
             </button>
             <div class="container d-flex justify-content-between align-items-center">
                 <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                    ProdArt
+                    Tech4You
                 </a>
                 <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="opciones">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
@@ -70,8 +71,8 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-lg-5 mt-5">
-                    <div class="card mb-3">
-                        <img class="card-img img-fluid" src="assets/img/feature_prod_02.jpg">
+                    <div class="card mb-5 p-5  containerP" id="principal">
+                        <img class=" rounded mx-auto d-block img-fluid zoom " src="assets/img/iPhone12-128-b5g-Blanco-removebg-preview.png" width="380" height="540" id="imagen">
                     </div>
                     <div class="row">
                         <div class="col-1 align-self-center">
@@ -80,25 +81,31 @@
                                 <span class="sr-only">Anterior</span>
                             </a>
                         </div>
-                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
-                            <div class="carousel-inner product-links-wap" role="listbox">
-                                <div class="carousel-item active">
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item p-2 " data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap " role="listbox">
+                                <div class="carousel-item active ">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-3">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/sombrero3.jpg">
+                                                <img class="card-img img-fluid " src="assets/img/Celular_Samsung_Galaxy_Z_Flip_6_256GB_5G-2-removebg-preview.png " class="miniatura" onclick="mostrarImagen(this)">
                                             </a>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-3">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/sombrero1.jpg">
+                                                <img class="card-img img-fluid" src="assets/img/Celular_vivo_Y18_256GB_4G-removebg-preview.png" class="miniatura" onclick="mostrarImagen(this)">
                                             </a>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-3">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/sombrero2.jpg">
+                                                <img class="card-img img-fluid" src="assets/img/Celular_Xiaomi_Redmi_Note_13_256GB_5G_con_obsequio-removebg-preview.png" class="miniatura" onclick="mostrarImagen(this)">
                                             </a>
                                         </div>
+                                        <div class="col-3">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/iPhone12-128-b5g-Blanco-removebg-preview.png" class="miniatura" onclick="mostrarImagen(this)">
+                                            </a>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -115,8 +122,8 @@
                 <div class="col-lg-7 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="h2">Sombrero vueltiao, hecho a mano...</h1>
-                            <p class="h3 py-2">$250.000</p>
+                            <h1 class="h2">iPhone12-128-b5g-Blanco</h1>
+                            <p class="h3 py-2">$3.250.000</p>
                             <p class="py-2">
                                 <i class="fa fa-star text-warning"></i>
                                 <i class="fa fa-star text-warning"></i>
@@ -127,13 +134,21 @@
                             </p>
 
                             <h6>Descripción:</h6>
-                            <p>Hecho a mano</p>
+                            <ul>
+                                <li>Procesador: A14 Bionic</li>
+                                <li>Pantalla: 6.1"</li>
+                                <li>Cámara Principal: 12 MP + 12 MP (doble)</li>
+                                <li>Cámara Frontal: 12 MP (sencilla)</li>
+                                <li>RAM: 4 GB</li>
+                                <li>Almacenamiento: 128 GB</li>
+                                <li>Sistema Operativo: iOS 16</li>
+                                <li>Peso: 162 gr</li>
+                                <li>Red: 2G, 3G, 4G, 5G</li>
+                                <li>Batería: 2815 mAh</li>
+                            </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <h6>Color :</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>Bandera de Colombia / Blanco-negro</strong></p>
+                                    <h6>Color : Blanco</h6>
                                 </li>
                             </ul>
 
@@ -146,16 +161,7 @@
                             <form action="" method="GET">
                                 <input type="hidden" name="product-title" value="Activewear">
                                 <div class="row">
-                                    <div class="col-auto">
-                                        <ul class="list-inline pb-3">
-                                            <li class="list-inline-item">Tallas :
-                                                <input type="hidden" name="product-size" id="product-size" value="S">
-                                            </li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size">S</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
-                                        </ul>
-                                    </div>
+                                    
                                     <div class="col-auto">
                                         <ul class="list-inline pb-3">
                                             <li class="list-inline-item text-right">
@@ -170,12 +176,12 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col-lg-6 d-grid">
-                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
+                                        <button type="submit" class="btn btn-success  boton_producto" name="submit" value="buy">Comprar</button>
                                         
                                     </div>
                                     <div class="col-lg-6 d-grid">
-                                        <button class="btn btn-success">
-                                            <a href="pago.html" target="target_blank">Pagar</a>
+                                        <button class="btn btn-success  boton_producto">
+                                            <a class="btn_pagar" href="pago.html" target="target_blank">Pagar</a>
                                             </button>
                                     </div> 
 
@@ -186,16 +192,22 @@
 
                     </div>
                                             <!-- paginacion -->
-            <div class="row">
-                <ul class="pagination pagination-lg justify-content-end">
+            <div class="row btn_siguiente">
+                <ul class="pagination pagination-lg justify-content-end mt-5">
                     <li class="page-item">
-                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="productos.html">1</a>
+                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-5 text-dark" href="productos.html"><</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-5 text-dark" href="productos.html">1</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="productos2.html">2</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="productos3.html">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="productos3.html">></a>
                     </li>
                 </ul>
             </div>
@@ -215,11 +227,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light log">ProdArt</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light log">Tech4You</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Local principal - Bogotá - Colombia
+                            Local principal - Valledupar - Colombia
                         </li>
 
                         <li>
@@ -228,19 +240,19 @@
                         </li>
                         <li>
                             <i class="fa fa-envelope mx-2"></i>
-                            <a class="text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
+                            <a class="text-decoration-none" href="mailto:info@prodart.com">info@Tech4You.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Marcas</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="compras.html">Sombreros</a></li>
-                        <li><a class="text-decoration-none" href="compras.html">Hamacas</a></li>
-                        <li><a class="text-decoration-none" href="compras.html">Platería</a></li>
-                        <li><a class="text-decoration-none" href="compras.html">Bolsos</a></li>
-                        <li><a class="text-decoration-none" href="compras.html">Mochilas</a></li>
-                        <li><a class="text-decoration-none" href="compras.html">Tapetes</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">Huawey</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">iphone</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">Sansung</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">TCL</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">Xiaomi</a></li>
+                        <li><a class="text-decoration-none" href="compras.html">Vivo</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 pt-5">
@@ -288,7 +300,7 @@
             <div class="container">
                 <div class="row pt-2">
                     <p class="text-left text-light">
-                        Copyright &copy; 2024 - ProdArt | Diseñado por: Pablo Carr
+                        Copyright &copy; 2024 - ProdArt | Diseñado por: Grupo3
                     </p>
                 </div>
             </div>
@@ -301,5 +313,6 @@
      <script src="assets/js/jquery-1.11.0.min.js"></script>
      <script src="assets/js/templatemo.js"></script>
      <script src="assets/js/custom.js"></script>
+     <script src="assets/js/efecto_zoom.js"></script>
 </body>
 </html>

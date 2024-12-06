@@ -29,10 +29,16 @@ Table of contents
 
 
 /* Typography */
-body, ul, li, p, a, label, input, div {
+body, ul, li, p , label, input, div {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px !important;
+  font-size: 18px !important;/* tamaño de texto en general */
   font-weight: 300 !important;
+
+}
+a{
+  font-size: 22px;
+  margin-left: 5px;
+  font-weight: 500;
 }
 .h1 {
   font-family: 'Roboto', sans-serif;
@@ -42,40 +48,71 @@ body, ul, li, p, a, label, input, div {
 .h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px !important;
-  font-weight: 300;
+  font-weight: 500;
 }
 .h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 22px !important;
 }
+
 /* General */
-.logo { font-weight: 500 !important;}
+.logo { font-weight: 700 !important;}
 .text-warning {  color: #ede861 !important;}
 .text-muted { color: #bcbcbc !important;}
-.text-success { color: #59ab6e !important;}
+.text-success { color: #32CD32 !important;}/* color del logo */
 .text-light { color: #cfd6e1 !important;}
 .bg-dark { background-color: #212934 !important;}
-.bg-light { background-color: #e9eef5 !important;}
+.bg-light { background-color: #def1f1 !important;}/* producto destacados color de fondo */
 .bg-black { background-color: #1d242d !important;}
 .bg-success { background-color: #59ab6e !important;}
 .btn-success {
-  background-color: #59ab6e !important;
-  border-color: #56ae6c !important;
+  background-color: #e11e10 !important;/* color botones */
+ padding: 10px 20px; 
+ font-size: 16px; color: white; 
+ background-color: #333; 
+ border: none; 
+ border-radius: 5px; 
+ cursor: pointer;
+ position: relative;
+ transition: box-shadow 0.3s;
+ font-size: 1em;
+ 
 }
+.btn-success:hover {
+   box-shadow: 0 0 10px 5px  rgba(0, 255, 0, 0.5)
+}
+.card-img:hover {
+  box-shadow: 1px 1px 5px 1px  rgba(0, 255, 0, 0.5)
+}
+.boton_producto{
+  width: 260px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.btn_pagar{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
 .pagination .page-link:hover {color: #000;}
 .pagination .page-link:hover, .pagination .page-link.active {
-  background-color: #69bb7e;
+  background-color: #f6fbf7; /* color boton siguente */
   color: #fff;
 }
 /* Nav */
-#templatemo_nav_top { min-height: 40px;}
-#templatemo_nav_top * { font-size: .9em !important;}
-#templatemo_main_nav a { color: #212934;}
-#templatemo_main_nav a:hover { color: #69bb7e;}
-#templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
+#templatemo_nav_top { min-height: 30px;}
+#templatemo_nav_top * { font-size: em !important; color:  #32CD32;}/* iconos de la parte superior */
+#templatemo_main_nav a { color: #211f1f;}/* color texto menu */
+
+#templatemo_main_nav a:hover { color: #32CD32;}
+#templatemo_main_nav .navbar .nav-icon { margin-right: 15px;}
 
 /* Hero Carousel */
-#template-mo-zay-hero-carousel { background: #efefef !important;}
+#template-mo-zay-hero-carousel { background: #f5f2f2 !important;}/* fondo carrusel */
+#template-mo-zay-hero-carousel { box-shadow: 10px 5px 8px 5px #656262 !important;}/* sombra */
+
 /* Accordion */
 .templatemo-accordion a { color: #000;}
 .templatemo-accordion a:hover { color: #333d4a;}
@@ -94,15 +131,37 @@ body, ul, li, p, a, label, input, div {
   opacity: 0;
   transition: .3s;
 }
+.card {
+  box-shadow: 10px 5px 8px 5px #656262 
+  
+}
+.card:hover{
+  transform:translateY(30px);
+  
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transition-duration: 3ms;
+}
+/* Estilo base de la imagen */
+.imgzoom {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Aplicar zoom al pasar el ratón */
+.imgzoom:hover {
+  transform: scale(1.5); /* Ajusta el factor de escala según tus necesidades */
+}
+
 .card.product-wap:hover .card .product-overlay {
   visibility: visible;
   opacity: 1;
+
 }
 .card.product-wap a { color: #000;}
 #carousel-related-product .slick-slide:focus { outline: none !important;}
 #carousel-related-product .slick-dots li button:before {
   font-size: 15px;
   margin-top: 20px;
+  
 }
 /* Brand */
 .brand-img {
@@ -117,11 +176,11 @@ body, ul, li, p, a, label, input, div {
 /* Carousel Hero */
 #template-mo-zay-hero-carousel .carousel-indicators li {
   margin-top: -50px;
-  background-color: #59ab6e;
+  background-color:#32CD32;/* guia carrusel */
 }
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
-  color: #59ab6e !important;
+  color: #32CD32 !important;/*  guia carrusel*/
   font-size: 2.8em !important;
 }
 /* Carousel Brand */
