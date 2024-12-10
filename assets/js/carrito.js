@@ -5,42 +5,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseDeDatos = [
         {
             id: 1,
-            nombre: 'e Colombia, 23 vueltas',
+            nombre: 'Oppo Reno 12f 256G',
             precio: 2500,
             imagen: 'assets/img/Celular_Oppo_Reno_12F_5G_256GB_Edición_especial_Harry_Potter-removebg-preview.png',
             categoria: 'Huawei'
         },
         {
             id: 2,
-            nombre: 'Sombrero vueltiao-machiembriao',
+            nombre: 'Huawei Nova Y91 256GB 4G',
             precio: 150000,
             imagen: '/assets/img/Celular_Huawei_Nova_Y91_256GB_4G-removebg-preview.png',
             categoria: 'sombreros'
         },
         {
             id: 3,
-            nombre: 'Sombrero vueltiao colombiano 15 vueltas tricolor',
+            nombre: 'Iphone12 128G 5G',
             precio: 250000,
             imagen: 'assets/img/iphone12-128gb-5g-negro-removebg-preview.png',
             categoria: 'sombreros'
         },
         {
             id: 4,
-            nombre: 'Mochila wayuu azul 6',
+            nombre: 'IPhone12 128GB 5G',
             precio: 120000,
             imagen: 'assets/img/iPhone12-128-b5g-Blanco-removebg-preview.png',
             categoria: 'mochilas'
         },
         {
             id: 5,
-            nombre: 'Bolso en fique',
+            nombre: 'Xiaomi Redmi 14C 128GB 4G',
             precio: 120000,
             imagen: 'assets/img/Celular_Xiaomi_Redmi_14C_128GB_4G-removebg-preview.png',
             categoria: 'bolsos'
         },
         {
             id: 6,
-            nombre: 'Hamaca',
+            nombre: 'Iphone12 128GB 5G',
             precio: 120000,
             imagen: 'assets/img/iphone12-128gb-5g-negro-removebg-preview.png',
             categoria: 'hamacas'
