@@ -5,44 +5,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseDeDatos = [
         {
             id: 1,
-            nombre: 'Huawe iNova 12 S256GB',
-            precio: 254000,
-            imagen: 'assets\img\Celular_Huawei_Nova_12_S_256GB_4G-2-removebg-preview.png',
+            nombre: 'e Colombia, 23 vueltas',
+            precio: 2500,
+            imagen: 'assets/img/Celular_Oppo_Reno_12F_5G_256GB_Edición_especial_Harry_Potter-removebg-preview.png',
             categoria: 'Huawei'
         },
         {
             id: 2,
             nombre: 'Sombrero vueltiao-machiembriao',
             precio: 150000,
-            imagen: 'assets/img/sombrero4.jpg',
+            imagen: '/assets/img/Celular_Huawei_Nova_Y91_256GB_4G-removebg-preview.png',
             categoria: 'sombreros'
         },
         {
             id: 3,
             nombre: 'Sombrero vueltiao colombiano 15 vueltas tricolor',
             precio: 250000,
-            imagen: 'assets/img/feature_prod_02.jpg',
+            imagen: 'assets/img/iphone12-128gb-5g-negro-removebg-preview.png',
             categoria: 'sombreros'
         },
         {
             id: 4,
             nombre: 'Mochila wayuu azul 6',
             precio: 120000,
-            imagen: 'assets/img/shop_04.jpg',
+            imagen: 'assets/img/iPhone12-128-b5g-Blanco-removebg-preview.png',
             categoria: 'mochilas'
         },
         {
             id: 5,
             nombre: 'Bolso en fique',
             precio: 120000,
-            imagen: 'assets/img/shop_03.jpg',
+            imagen: 'assets/img/Celular_Xiaomi_Redmi_14C_128GB_4G-removebg-preview.png',
             categoria: 'bolsos'
         },
         {
             id: 6,
             nombre: 'Hamaca',
             precio: 120000,
-            imagen: 'assets/img/category_img_02.jpg',
+            imagen: 'assets/img/iphone12-128gb-5g-negro-removebg-preview.png',
             categoria: 'hamacas'
         }
     ];
